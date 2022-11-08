@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Convenios</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>    
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Tipo convenio">
+          <ion-select-option value="apples">Contrato</ion-select-option>
+          <ion-select-option value="oranges">Temporal</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select placeholder="Empresa">
+          <ion-select-option value="apples">MSI</ion-select-option>
+          <ion-select-option value="oranges">Cencosud</ion-select-option>
+          <ion-select-option value="bananas">Falabella</ion-select-option>
+          <ion-select-option value="bananas">HP</ion-select-option>
+          <ion-select-option value="bananas">Ripley</ion-select-option>
+          <ion-select-option value="bananas">Partner</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select placeholder="Metodo de pago">
+          <ion-select-option value="apples">Credito</ion-select-option>
+          <ion-select-option value="oranges">Debito</ion-select-option>
+          <ion-select-option value="bananas">Efectivo</ion-select-option>
+          <ion-select-option value="bananas">Factura</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-row>
+      <ion-col>        
+        <ion-button [routerLink]="['/vista-ot']" type="submit" color="primary" expand="block">Ingresar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

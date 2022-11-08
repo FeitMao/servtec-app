@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Entrega</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar>
+        <ion-title>N° OT</ion-title>
+      </ion-toolbar>
+      <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-item [routerLink]="['/entrega-ot']">82020</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82021</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82022</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82023</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82024</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82025</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82026</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82027</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82028</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82030</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82031</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82032</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82033</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82034</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82035</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82036</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82037</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82038</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82039</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82040</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82041</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82042</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82043</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82044</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82045</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82046</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82047</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82048</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82049</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82050</ion-item>
+        <ion-item [routerLink]="['/entrega-ot']">82051</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-app>
+
+  <script>
+    const searchbar = document.querySelector('ion-searchbar');
+    const items = Array.from(document.querySelector('ion-list').children);
+
+    searchbar.addEventListener('ionInput', handleInput);
+
+    function handleInput(event) {
+      const query = event.target.value.toLowerCase();
+      requestAnimationFrame(() => {
+        items.forEach((item) => {
+          const shouldShow = item.textContent.toLowerCase().indexOf(query) > -1;
+          item.style.display = shouldShow ? 'block' : 'none';
+        });
+      });
+    }
+  </script>
+</ion-content>

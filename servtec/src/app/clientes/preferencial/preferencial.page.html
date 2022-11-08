@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Preferencial</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Apellido</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Rut</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Numero</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Direccion</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-item>
+        <ion-select placeholder="Comuna">
+          <ion-select-option value="apples">Ñuñoa</ion-select-option>
+          <ion-select-option value="oranges">Las Condes</ion-select-option>
+          <ion-select-option value="bananas">Buin</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select placeholder="Ciudad">
+          <ion-select-option value="apples">Santiago</ion-select-option>
+          <ion-select-option value="oranges">Rancagua</ion-select-option>
+          <ion-select-option value="bananas">Valparaiso</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-select placeholder="Metodo de pago">
+          <ion-select-option value="apples">Credito</ion-select-option>
+          <ion-select-option value="oranges">Debito</ion-select-option>
+          <ion-select-option value="bananas">Efectivo</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <ion-row>
+      <ion-col>        
+        <ion-button [routerLink]="['/vista-ot']" type="submit" color="primary" expand="block">Ingresar</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

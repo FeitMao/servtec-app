@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <h2>Bienvenido</h2>
+        <h5>Seleccione : </h5>
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label color="warning">Area...</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              <ion-button [routerLink]="['/register-ss']" fill="clear"><ion-icon name="people-circle-outline"></ion-icon> &nbsp; &nbsp;Crear User</ion-button><br/>
+              <ion-button [routerLink]="['/login-admin']" fill="clear"><ion-icon name="business"></ion-icon> &nbsp; &nbsp;Administrador</ion-button><br/>
+              <ion-button [routerLink]="['/login-hardware']" fill="clear"><ion-icon name="hardware-chip"></ion-icon> &nbsp; &nbsp;Hardware</ion-button><br/>
+              <ion-button [routerLink]="['/login-software']" fill="clear"><ion-icon name="terminal"></ion-icon> &nbsp; &nbsp;Software</ion-button><br/>
+              <ion-button [routerLink]="['/login-ventas']" fill="clear"><ion-icon name="wallet"></ion-icon> &nbsp; &nbsp;Ventas</ion-button><br/>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

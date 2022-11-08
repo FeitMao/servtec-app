@@ -1,0 +1,31 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title color="warning" >Entrega</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <h2>N° OT 83435</h2>
+  <h5>Fecha </h5>
+  <h5>Cliente </h5>
+  <h5>numero </h5>
+  <h5>direccion </h5>
+  <h5>pass usuario </h5>
+  <h5>marca </h5>
+  <h5>modelo </h5>
+  <h5>S/N </h5>
+  <h5>Detalle equipo </h5>
+  <h5>Falla </h5>
+  <h5>Politicas de la empresa .............................. </h5>
+  <form>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="primary" expand="block">Imprimir</ion-button>
+        <ion-button [routerLink]="['/sscc']" type="submit" color="primary" expand="block">Volver</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "servtec",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,28 @@
+
+<ion-header>
+  <ion-toolbar>    
+    <ion-title color="primary">SSCC</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <h2>ServTec</h2>
+        <h5>Seleccione una opcion: </h5>
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label color="warning">Servicio</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              <ion-button [routerLink]="['/ingreso']" fill="clear"><ion-icon name="log-in"></ion-icon> &nbsp; &nbsp;Ingresar Equipo</ion-button><br/>
+              <ion-button [routerLink]="['/entrega']" fill="clear"><ion-icon name="log-out"></ion-icon> &nbsp; &nbsp;Retirar Equipo</ion-button><br/>
+            </div>            
+          </ion-accordion>
+        </ion-accordion-group>
+        <ion-button [routerLink]="['/']" type="submit" color="primary" expand="block">Volver</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

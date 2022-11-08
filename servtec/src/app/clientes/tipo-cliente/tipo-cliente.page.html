@@ -1,0 +1,33 @@
+
+<ion-header>
+  <ion-toolbar>  
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>  
+    <ion-title color="primary">Clientes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <h2>ServTec</h2>
+        <h5>Seleccione un tipo: </h5>
+        <ion-accordion-group>
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light">
+              <ion-label color="warning">Clientes...</ion-label>
+            </ion-item>
+            <div class="ion-padding" slot="content">
+              <ion-button [routerLink]="['/natural']" fill="clear"><ion-icon name="man"></ion-icon> &nbsp; &nbsp;Natural</ion-button><br/>
+              <ion-button [routerLink]="['/preferencial']" fill="clear"><ion-icon name="medical"></ion-icon> &nbsp; &nbsp;Preferencial</ion-button><br/>
+              <ion-button [routerLink]="['/empresa']" fill="clear"><ion-icon name="business"></ion-icon> &nbsp; &nbsp;Empresa</ion-button><br/>
+              <ion-button [routerLink]="['/convenios']" fill="clear"><ion-icon name="bag-check"></ion-icon> &nbsp; &nbsp;Convenios</ion-button><br/>
+            </div>            
+          </ion-accordion>
+        </ion-accordion-group>
+        <ion-button [routerLink]="['/sscc']" type="submit" color="primary" expand="block">Volver</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

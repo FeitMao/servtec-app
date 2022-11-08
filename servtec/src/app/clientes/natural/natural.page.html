@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ingreso</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form>    
+    <ion-row>
+      <ion-col>       
+        <ion-button (click)="mostrarFormularioCN()" type="submit" color="primary" expand="block">Ingresar Cliente</ion-button> 
+        <ion-button [routerLink]="['/vista-ot']" type="submit" color="primary" expand="block">Ingresar</ion-button>
+        <ion-button [routerLink]="['/sscc']" type="submit" color="primary" expand="block">Volver</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>
